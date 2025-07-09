@@ -1,6 +1,8 @@
 package main
 
-import "./pkg/htmlWordCounter"
+import (
+	"github.com/MohannadAK/go-playground/pkg/htmlWordCounter"
+)
 
 var raw = `
 <!DOCTYPE html>
