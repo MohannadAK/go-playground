@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/MohannadAK/go-playground/pkg/htmlWordCounter"
 )
 
@@ -17,5 +19,6 @@ var raw = `
 </html>`
 
 func main() {
-	htmlWordCounter.Start(raw)
+	words, pics := htmlWordCounter.Start(raw)
+	fmt.Printf("Words: %d, Images: %d\n", words, pics)
 }
